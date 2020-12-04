@@ -1,8 +1,6 @@
-
-
 /*
     
-    created: by Kvantorium.Astraknan(),10:31 GMT +3;
+    created: by Kvantorium.Astraknan(), 8:31 GMT +3;
     Kvantorium.Astraknan(): Rafikov Timur, Aleksey Ivlev, Yagolichev Anatoliy;
     Couch: Ruder Artem Nikolaevich;
 
@@ -35,13 +33,6 @@ var submitButton = document.getElementById("submitButton");
 var id;
 
 function add() {
-    /*
-    var name = prompt("Enter your name and surname: ");                               // ввод данных о пациенте
-    var day_of_birth = prompt("Enter your day of birth: ");
-    var month_of_birth = prompt("Enter your month of birth: ");
-    var year_of_birth = prompt("Enter your year of birth: ");
-    var symptoms = prompt("Enter your symptoms (extreme, hard, medium, dbg): ");
-    */
     userInfo = {                                                                             // информация о пациенте в одном объекте
         name: name.value,
         birth: day_of_birth.value + " " + month_of_birth.value + " " + year_of_birth.value,
@@ -61,7 +52,7 @@ function add() {
             prev = m;
         }
         for (i = 0; i < stack.length; ++i) stack[i].time += 15;
-        userInfo.time = 15;к
+        userInfo.time = 15;
         stack[0] = userInfo;
         id = 0;
 
@@ -102,9 +93,5 @@ function load_main_page() {
     document.getElementById("monthOfBirth").value = "Январь";
     document.getElementById("yearOfBirth").value = "";
     document.getElementById("symptoms").value = "Лёгкие";
-    document.getElementById("content").innerHTML = "";
-    document.getElementById("time").innerHTML = "";
-    document.getElementById("id").innerHTML = "";
     document.getElementById("res").innerHTML = "";
-    document.getElementById("position").innerHTML = "";
 }
