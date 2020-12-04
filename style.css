@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+button {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    font-size: 15   px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 0;
+}
+
+.header__logo {
+    text-transform: uppercase;
+}
+
+.header__nav {
+    display: flex;
+    text-transform: uppercase;
+}
+
+#a {
+    line-height: 1;
+}
+
+#a:after {
+    display: block;
+	left: 0;
+	width: 0;
+	height: 2px;
+    background-color: black;
+    
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+#a:hover:after,
+#a:focus:after {
+	width: 100%;
+}
+
+.a2 {
+    padding: 0 15px;
+}
+
+#logo {
+    line-height: 1;
+}
+
+#logo:after {
+    display: block;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+#logo:hover:after,
+#logo:focus:after {
+    width: 100%;
+}
+
+#formContainer {
+    width: 400px;
+    min-height: 610px;
+    padding: 40px;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: lightskyblue;
+
+    text-align: center;
+    display: block;
+}
+
+.mainText {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#name, #dayOfBirth, #monthOfBirth, #yearOfBirth, #symptoms {
+    border: 0;
+    background: 0;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+
+    border: 2px solid black;
+    padding: 14px 10px;
+    border-radius: 24px;
+    outline: none;
+    
+    width: 200px;
+    transition: 0.25s; 
+}
+
+#name:focus, #dayOfBirth:focus, #monthOfBirth:focus, #yearOfBirth:focus, #symptoms:focus {
+    width: 280px;
+    border-color: green;
+}
+
+.pd {
+    padding: 10px 0;
+}
+
+select {
+    width: 100px;
+
+    cursor: pointer;
+}
+
+.pdTop {
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+.symptomsText {
+    padding-bottom: 10px;
+}
+
+#submitButton {
+    width: 100px;
+
+    cursor: pointer;
+
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid green;
+    padding: 10px 40px;
+    outline: none;
+    border-radius: 24px;
+
+    transition: color .4s linear;
+}
+
+#submitButton:hover {
+    background-color: green;
+}
+
+
+#stackinfo {
+    display: none;
+    width: 400px;
+    min-height: 410px;
+    padding: 40px;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: lightskyblue;
+
+    text-align: center;
+}
+
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
