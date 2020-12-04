@@ -2,7 +2,7 @@
 
 /*
     
-    created: by Kavntorium.Astraknan(),10:31 GMT +3;
+    created: by Kvantorium.Astraknan(),10:31 GMT +3;
     Kvantorium.Astraknan(): Rafikov Timur, Aleksey Ivlev, Yagolichev Anatoliy;
     Couch: Ruder Artem Nikolaevich;
 
